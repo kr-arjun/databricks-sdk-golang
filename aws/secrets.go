@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/xinsnake/databricks-sdk-golang/aws/models"
+	"github.com/kr-arjun/databricks-sdk-golang/aws/models"
 )
 
 // SecretsAPI exposes the Secrets API
