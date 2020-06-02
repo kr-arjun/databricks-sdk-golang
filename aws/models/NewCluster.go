@@ -10,7 +10,7 @@ type NewCluster struct {
 	NodeTypeID        string            `json:"node_type_id,omitempty" url:"node_type_id,omitempty"`
 	DriverNodeTypeID  string            `json:"driver_node_type_id,omitempty" url:"driver_node_type_id,omitempty"`
 	SSHPublicKeys     []string          `json:"ssh_public_keys,omitempty" url:"ssh_public_keys,omitempty"`
-	CustomTags        []ClusterTag      `json:"custom_tags,omitempty" url:"custom_tags,omitempty"`
+	CustomTags        *ClusterTag       `json:"custom_tags,omitempty" url:"custom_tags,omitempty"`
 	ClusterLogConf    *ClusterLogConf   `json:"cluster_log_conf,omitempty" url:"cluster_log_conf,omitempty"`
 	InitScripts       []InitScriptInfo  `json:"init_scripts,omitempty" url:"init_scripts,omitempty"`
 	SparkEnvVars      map[string]string `json:"spark_env_vars,omitempty" url:"spark_env_vars,omitempty"`
